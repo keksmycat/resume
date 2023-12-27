@@ -6,18 +6,23 @@ body {
 	width: 100%;
 	height: auto;
 	margin: 0;
-	
+	background-image: url('../img/sintwave.gif');
+	background-size: cover;
+	background-repeat: no-repeat;
+	cursor: url('../img/cur2.png'), auto;
 }
+
+::selection {
+    background: #9302cc; 
+    color: #fffb00; 
+   }
 
 .navbar{
 	position:relative;
-	background-color:rgb(250, 250, 250);
 	width: 100%;
 	height: auto;
-	box-shadow: 0 0 10px rgb(99, 113, 235);
-	z-index: 6;
-	border-bottom: 1px solid rgb(99, 113, 235);
 }
+
 .navbar .container{
 	height: inherit;
 	display: flex;
@@ -36,7 +41,7 @@ body {
 	display: inline-block;
 	padding: 20px;
 	font-size: 19px;
-	color: rgb(0, 0, 0);
+	color: rgb(255, 255, 255);
 	opacity: 1;
 	text-decoration: none;
 	transition: all .20s ease-out;
@@ -44,18 +49,20 @@ body {
 .navbar-menu li a:hover{
 	opacity: 1;
 	transform: scale(1.15);
-	color:rgb(99, 113, 235);
+	color: rgb(0, 0, 0);
+	text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
 }
 .navbar-name{
 	font-weight: 700;
 	font-size: 26px;
 	margin: 10px;
 	text-decoration: none;
-	color: rgb(0, 0, 0);
+	color: rgb(255, 255, 255);
 	transition: all .20s ease-in-out;
 }
 .navbar-name:hover{
-	color: rgb(99, 113, 235);
+	color: black;
+	text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
 }
 
 .main{
@@ -63,8 +70,6 @@ body {
 	justify-content: center;
 	height: 100vh;
 	width: 100%;
-	background-color: rgb(243, 243, 243);
-	
 }
 
 .img{
@@ -75,10 +80,8 @@ body {
 }
 .img1{
 	height: 100vh;
-	border: 1px solid rgb(99, 113, 235);
-	border-radius: 100% 0% 100% 0% / 100% 0% 100% 0% ;
-	background-color: rgb(99, 113, 235);
-	box-shadow: 0 0 10px rgb(99, 113, 235);
+	border: 2px solid rgb(17, 0, 255);
+	background-color: rgba(150, 41, 141, 0.589);
 	
 }
 
@@ -87,38 +90,82 @@ body {
 	flex-direction: column;
 	width: 50%;
 	margin-top: 300px;
+	font-size: 20px;
+	text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
 
 }
-
-
-.exp{
-
-	border: 1px solid black;
-
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	height: 100vh;
-	background-color: rgb(243, 243, 243);
-}
-
-.exp ul{
-	display: flex;
-	flex-direction: column;
-	margin: 0px;
-}
-
-
-
-
 
 .link{
-
-	border: 1px solid black;
-
 	display: flex;
-	justify-content: center;
+	justify-content:space-around;
 	align-items: center;
-	height: 20vh;
-	background-color: rgb(243, 243, 243);
+	height: 15vh;
+	background-color: rgba(4, 255, 17, 0);
+}
+
+.fa-telegram{
+	font-size: 40px;
+	color: #0088cc;
+	transition: all .40s ease-out;
+}
+.fa-telegram:hover{
+	color: #ffffff;
+  text-shadow:
+  	0 0 3px #00aaff, 
+  	0 0 7px #00aaff,
+   	0 0 15px #00aaff,
+    0 0 30px #00aaff
+}
+.fa-whatsapp{
+	font-size: 40px;
+	color: #25D366;
+	transition: all .40s ease-out;
+}
+.fa-whatsapp:hover{
+	color: #ffffff;
+  text-shadow:
+  	0 0 3px #25D366, 
+  	0 0 7px #25D366,
+   	0 0 15px #25D366,
+    0 0 30px #25D366
+}
+.fa-github{
+	font-size: 40px;
+	color: #f5f5f5;
+	transition: all .40s ease-out;
+}
+.fa-github:hover{
+	color: #ffffff;
+  text-shadow:
+  	0 0 3px #ffffff, 
+  	0 0 7px #ffffff,
+   	0 0 15px #ffffff,
+    0 0 30px #ffffff
+}
+.fa-envelope{
+	font-size: 40px;
+	color: #ddda3b;
+	transition: all .40s ease-out;
+}
+.fa-envelope:hover{
+	color: #ffffff;
+  text-shadow:
+  	0 0 3px #ddda3b, 
+  	0 0 7px #ddda3b,
+   	0 0 15px #ddda3b,
+    0 0 30px #ddda3b
+}
+.tel{
+	text-decoration: none;
+	font-size: 25px;
+	color: #ffffff;
+	transition: all .40s ease-out;
+}
+.tel:hover{
+	color: #ffffff;
+  text-shadow:
+  	0 0 3px #ffffff, 
+  	0 0 7px #ffffff,
+   	0 0 15px #ffffff,
+    0 0 30px #ffffff
 }
